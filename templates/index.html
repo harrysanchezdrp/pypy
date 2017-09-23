@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+	Main Page
+{% endblock %}
+{% block indexcontent %}
+	<div class="header-row1">
+        <a href="/"><img src="/static/img/logo.png"></a>
+        <h2>FREE U.S. SHIPPING - NO MINIMUM</h2>
+        {% include 'inc-login_form.html' %}
+    </div>
+    <div class="header-row2">
+    	<ul class="menu">
+    		<li><a href=#>SKATE</a>
+				<ul class="submenu">
+					<li><a href=#>Skateboard Completes</a></li>
+					<li><a href=#>Cruiser Completes</a></li>
+					<li><a href=#>Longboard Completes</a></li>
+				</ul>
+    		</li>
+    		<li><a href=#>SHOES</a>
+				<ul class="submenu">
+					<li><a href=#>Skate shoes</a></li>
+					<li><a href=#>Runners</a></li>
+					<li><a href=#>Boots</a></li>
+				</ul>
+    		</li>
+    		<li><a href=#>DETAILS</a>
+				<ul class="submenu">
+					<li><a href=#>Decks</a></li>
+					<li><a href=#>Trucks</a></li>
+					<li><a href=#>Wheels</a></li>
+				</ul>
+    		</li>
+    	</ul>
+    </div>
+{% endblock %}
